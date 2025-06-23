@@ -82,8 +82,7 @@ production:
   primary: &primary_production
     <<: *default
     database: dummy_database_nx6a
-    username: developer
-    password: developer
+    DATABASE_URL="postgresql://dummy_database_nx6a_user:ErZYrpOEVnRLvvalYHvGCCr19tENODwl@dpg-d14le46uk2gs73b0pk60-a/dummy_database_nx6a"
   cache:
     <<: *primary_production
     database: my_profile_production_cache
