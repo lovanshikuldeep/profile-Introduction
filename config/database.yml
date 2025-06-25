@@ -84,15 +84,15 @@ production:
     database: dummy_database_nx6a
     username: dummy_database_nx6a_user
     password: ErZYrpOEVnRLvvalYHvGCCr19tENODwl
-  # cache:
-  #   <<: *primary_production
-  #   database: myintro_production_cache
-  #   migrations_paths: db/cache_migrate
-  # queue:
-  #   <<: *primary_production
-  #   database: myintro_production_queue
-  #   migrations_paths: db/queue_migrate
-  # cable:
-  #   <<: *primary_production
-  #   database: myintro_production_cable
-  #   migrations_paths: db/cable_migrate
+  cache:
+    <<: *primary_production
+    database: myintro_production_cache
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *primary_production
+    database: myintro_production_queue
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *primary_production
+    database: myintro_production_cable
+    migrations_paths: db/cable_migrate
